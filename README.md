@@ -52,3 +52,4 @@ STEP 2: 执行`accelerate launch train.py` 每个epoch都会保存一次检查�
 2. `data\gripper`目录下两个文件存储的数据是相同的
 3. 目前不支持通过参数更改head_dim的功能，请在`model_arch.py`中通过直接通过代码修改。默认head_dim是64，仅对应论文中gripper数据集相关实验
 4. transformers的版本必须是4.46.3，最新版transformers的KV缓存机制会导致显存溢出，速度也更慢
+5. 训练好的模型权重在分支master里面
